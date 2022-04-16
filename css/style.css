@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: "border-box";
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+}
+
+main {
+  position: relative;
+  margin: 2.5rem 1rem;
+}
+main .back {
+  text-decoration: none;
+  position: absolute;
+  color: hsl(25deg, 97%, 53%);
+  top: -40px;
+  left: -50%;
+  transform: translateX(250%);
+  font-weight: 700;
+  background-color: hsla(213deg, 20%, 18%, 0.637);
+  max-width: 50px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: none;
+  border-radius: 50px;
+  -webkit-animation: smooth3 1.3s ease;
+          animation: smooth3 1.3s ease;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+}
+main .back:active {
+  color: #fff;
+}
+main .back:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .animation-overflow2 {
+  overflow: hidden;
+}
+main .rating-container {
+  background-color: hsla(213deg, 20%, 18%, 0.637);
+  padding: 2rem;
+  max-width: 340px;
+  border-radius: 35px;
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-animation: smooth2 0.2s ease-in-out;
+          animation: smooth2 0.2s ease-in-out;
+}
+main .rating-container .icon-star {
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  background-color: hsla(216deg, 12%, 54%, 0.137);
+  box-shadow: 1px 0px 8px -3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .rating-container .icon-star img {
+  max-width: 100%;
+  line-height: 40px;
+}
+main .rating-container h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+main .rating-container p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 2rem;
+}
+main .rating-container .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.9rem;
+  margin-top: 2rem;
+}
+main .rating-container .rating .box {
+  flex: 0 1 50px;
+  height: 50px;
+  cursor: pointer;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsla(216deg, 12%, 54%, 0.137);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+main .rating-container .rating .box span {
+  color: hsl(217deg, 12%, 63%);
+  line-height: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 100%;
+  transition: 0.24s ease-in-out;
+}
+main .rating-container .rating .box span:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .rating-container .rating .box .active {
+  background-color: hsl(217deg, 12%, 63%);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+  color: hsl(0deg, 0%, 100%);
+}
+main .rating-container .btn {
+  width: 100%;
+  padding: 0.9rem 0;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.35s ease-in-out;
+}
+main .rating-container .btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.animation-overflow {
+  border-radius: 35px;
+  overflow: hidden;
+  display: none;
+}
+.animation-overflow .thanks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: smooth 0.2s ease-in-out;
+          animation: smooth 0.2s ease-in-out;
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.animation-overflow .thanks-container .thank-you-img {
+  margin-bottom: 1.9rem;
+}
+.animation-overflow .thanks-container .thank-you-img img {
+  max-width: 100%;
+}
+.animation-overflow .thanks-container .answer {
+  background-color: hsla(216deg, 12%, 54%, 0.137);
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.3rem 1.1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: 400;
+}
+.animation-overflow .thanks-container h1 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 1.1rem;
+}
+.animation-overflow .thanks-container .caption {
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+footer p a {
+  color: hsl(25deg, 97%, 53%);
+}
+
+@-webkit-keyframes smooth {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes smooth {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes smooth2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes smooth2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes smooth3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes smooth3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    margin: 1rem;
+  }
+  main .back {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main .rating-container {
+    padding: 1.5rem;
+  }
+  main .rating-container h1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  main .rating-container .rating .box {
+    flex: 0 1 45px;
+    height: 45px;
+    width: 45px;
+  }
+  main .rating-container .btn {
+    width: 100%;
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  
+  
+  
+  <main>
+    <a href="index.html" class="back">Back</a>
+    <div class="animation-overflow2">
+      <div class="rating-container" id="current-container">
+        <div class="icon-star">
+          <img src="./images/icon-star.svg" alt="star-icon">
+        </div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+          <div class="rating">
+            <div class="box">
+              <span class="rate-num">1</span>
+            </div>
+            <div class="box">
+              <span class="rate-num">2</span>
+            </div>
+            <div class="box">
+              <span class="rate-num">3</span>
+            </div>
+            <div class="box">
+              <span class="rate-num active">4</span>
+            </div>
+            <div class="box">
+              <span class="rate-num">5</span>
+            </div>
+            
+          </div>
+          <button id="submit" class="btn">Submit</button>
+          
+        </div>
+        
+
+    </div>
+      
+      <div class="animation-overflow" id="final-container"> <!-- added this wrapper to overflow:hidden the animation on the rating-container -->
+        <div class="rating-container thanks-container">
+          <div class="thank-you-img">
+            <img src="./images/illustration-thank-you.svg" alt="star-icon">
+          </div>
+          <p id="final-answer" class="answer">You selected <span id="rate"></span> out of 5</p>
+          <h1>Thank you!</h1>
+          <p class="caption">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+          </div>
+        </div>
+        
+      </main>
+      
+
+      <footer>
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Kamasah Dickson</a>.</p>
+      </footer>
+      
+      
+      <!-- <div class="attribution">
+        
+      </div> -->
+      <script src="./app.js"></script>
+    </body>
+    </html>
